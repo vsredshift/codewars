@@ -20,7 +20,7 @@ public class Weight4Weight {
         weightList.sort((o1, o2) -> {
             if (sumDigits(Long.parseLong(o1)) > sumDigits(Long.parseLong(o2))) {
                 return 1;
-            } else if (sumDigits(Long.parseLong(o1)) == sumDigits(Long.parseLong(o2))) {
+            } else if (Objects.equals(sumDigits(Long.parseLong(o1)), sumDigits(Long.parseLong(o2)))) {
                 return o1.compareTo(o2);
             } else return -1;
         });
