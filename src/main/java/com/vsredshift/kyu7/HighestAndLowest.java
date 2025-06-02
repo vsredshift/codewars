@@ -1,4 +1,4 @@
-package com.vsredshift.main.kyu7;
+package main.java.com.vsredshift.kyu7;
 
 import java.util.ArrayList;
 import java.util.Collections;

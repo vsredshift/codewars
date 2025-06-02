@@ -1,4 +1,4 @@
-package com.vsredshift.main.kyu5;
+package main.java.com.vsredshift.kyu5;
 
 import java.util.*;
 import java.util.function.Function;

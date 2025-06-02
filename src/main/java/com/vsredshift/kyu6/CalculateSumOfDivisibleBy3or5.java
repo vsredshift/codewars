@@ -1,7 +1,5 @@
-package com.vsredshift.main.kyu6;
+package main.java.com.vsredshift.kyu6;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.stream.IntStream;
 
 public class CalculateSumOfDivisibleBy3or5 {

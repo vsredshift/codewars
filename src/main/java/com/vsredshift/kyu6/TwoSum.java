@@ -1,4 +1,4 @@
-package com.vsredshift.main.kyu6;
+package main.java.com.vsredshift.kyu6;
 
 import java.util.Arrays;
 
