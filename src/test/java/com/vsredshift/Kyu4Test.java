@@ -12,17 +12,20 @@ public class Kyu4Test {
                 "www.codewars.com/users/GiacomoSorbi?ref=CodeWars",
                 "www.microsoft.com/docs/index.htm#top",
                 "mysite.com/very-long-url-to-make-a-silly-yet-meaningful-example/example.asp",
-                "www.very-long-site_name-to-make-a-silly-yet-meaningful-example.com/users/giacomo-sorbi"};
+                "www.very-long-site_name-to-make-a-silly-yet-meaningful-example.com/users/giacomo-sorbi",
+                " www.agcpartners.co.uk/"};
 
-        String[] separators = new String[] {" : ", " / ", " * ", " > ", " + "};
+        String[] separators = new String[] {" : ", " / ", " * ", " > ", " + ", " * "};
 
         String[] answers = new String[] {"<a href=\"/\">HOME</a> : <a href=\"/pictures/\">PICTURES</a> : <span class=\"active\">HOLIDAYS</span>",
                 "<a href=\"/\">HOME</a> / <a href=\"/users/\">USERS</a> / <span class=\"active\">GIACOMOSORBI</span>",
                 "<a href=\"/\">HOME</a> * <span class=\"active\">DOCS</span>",
                 "<a href=\"/\">HOME</a> > <a href=\"/very-long-url-to-make-a-silly-yet-meaningful-example/\">VLUMSYME</a> > <span class=\"active\">EXAMPLE</span>",
-                "<a href=\"/\">HOME</a> + <a href=\"/users/\">USERS</a> + <span class=\"active\">GIACOMO SORBI</span>"};
+                "<a href=\"/\">HOME</a> + <a href=\"/users/\">USERS</a> + <span class=\"active\">GIACOMO SORBI</span>",
+                "<span class=\"active\">HOME</span>"
+        };
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 6; i++) {
             System.out.println(" \nTest with : " + urls[i]);
             String actual = BreadcrumbGenerator.generateBreadcrumb(urls[i], separators[i]);
             if (!actual.equals(answers[i])) {
